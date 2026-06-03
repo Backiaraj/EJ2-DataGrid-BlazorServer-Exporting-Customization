@@ -1,33 +1,48 @@
 # Blazor Server DataGrid - Exporting Customization
 
-This sample explains about how to customize the exported files like changing the filename, export without Grouping, apply external filter only while exporting etc.
+## Overview
+
+This sample demonstrates how to customize [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) export functionality in a Blazor Server application. Export data to Excel or PDF with custom filenames, apply external filters during export, remove grouping for cleaner exports, and more. Perfect for building sophisticated data export features in your applications.
 
 ## Features
 
-* Fast rendering with virtualization and row/column virtualization
-* Sorting, filtering, grouping, and searching capabilities
-* Inline, batch, and dialog editing modes
-* Template columns, column resizing, reordering, and freezing
-* Excel and PDF export (requires additional Syncfusion export packages)
+- **Custom Export Configuration** - Change filenames and control export properties
+- **Filtered Exports** - Apply external filters only during export without affecting the grid display
+- **Grouping Control** - Clear grouping before export for simplified output
+- **Excel & PDF Support** - Export to both Excel (.xlsx) and PDF formats
+- **Real-time Data** - Grid displays live sample data with sorting and grouping
+- **Interactive UI** - Simple button-based export triggers
 
-## Prerequisites
+## Getting Started
 
-* Visual Studio 2022 or later
-* Visual Studio Code
+### Prerequisites
 
-## How to run the project
+* [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-1. Clone or download this repository to a location in your system.
-2. Open the solution file using the Visual Studio or Visual Studio code.
-3. Restore the NuGet packages by rebuilding the solution or run `dotnet restore`.
-4. Build the project to ensure there are no compilation errors.
-5. Run the project.
+### Clone the repository
 
-Optional CLI Commands:
+```bash
+git clone https://github.com/Backiaraj/EJ2-DataGrid-BlazorServer-Exporting-Customization.git
+cd ExportingCustomization
+```
 
-```powershell
+### Run with Visual Studio
+
+1. Open the solution file using Visual Studio 2022 or later.
+2. Restore the NuGet packages by rebuilding the solution.
+3. Build the project to ensure there are no compilation errors.
+4. Run the project.
+
+### Run with .NET CLI
+
+```bash
+# Restore dependencies
 dotnet restore
-dotnet build
+
+# Run the project
+dotnet run
 ```
 
 ## References
