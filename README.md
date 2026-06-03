@@ -24,7 +24,7 @@ This sample demonstrates how to customize [Blazor DataGrid](https://www.syncfusi
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Backiaraj/EJ2-DataGrid-BlazorServer-Exporting-Customization.git
+git clone https://github.com/SyncfusionExamples/EJ2-DataGrid-BlazorServer-Exporting-Customization.git
 cd ExportingCustomization
 ```
 
