@@ -1,52 +1,58 @@
-# Blazor Server DataGrid - Exporting Customization
+# Syncfusion Blazor Server DataGrid - Exporting Customization
 
 ## Overview
 
-This sample demonstrates how to customize [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) export functionality in a Blazor Server application. Export data to Excel or PDF with custom filenames, apply external filters during export, remove grouping for cleaner exports, and more. Perfect for building sophisticated data export features in your applications.
+This sample demonstrates export customization scenarios in the Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) for Blazor Server applications. The implementation focuses on modifying export behavior beyond the default Grid export workflow, including changing exported file names, exporting data without grouping information, and applying external filter criteria only during export operations. These customization techniques are useful when exported documents must follow business-specific rules that differ from the data currently displayed in the Grid. The sample provides a reference implementation for tailoring DataGrid export behavior while maintaining a standard user experience for end users.
 
-## Features
+## Key Features
 
-- **Custom Export Configuration** - Change filenames and control export properties
-- **Filtered Exports** - Apply external filters only during export without affecting the grid display
-- **Grouping Control** - Clear grouping before export for simplified output
-- **Excel & PDF Support** - Export to both Excel (.xlsx) and PDF formats
-- **Real-time Data** - Grid displays live sample data with sorting and grouping
-- **Interactive UI** - Simple button-based export triggers
+- Demonstrates customization of Syncfusion DataGrid export operations.
+- Shows how export output can use a custom file name instead of the default generated name.
+- Demonstrates exporting data without grouped records.
+- Shows how additional external filtering logic can be applied exclusively during export operations.
+- Uses sample data and Grid configuration stored within the repository implementation.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+* Visual Studio 2022 or Visual Studio Code
+* .NET SDK compatible with the project's target framework
 
-* [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
-* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
-* [Visual Studio Code](https://code.visualstudio.com/)
+## How to Run the Project
 
-### Clone the repository
+**Visual Studio 2022**
+
+1. Clone or download this repository.
+2. Open the solution file: `ExportingCustomization.sln`
+3. Restore NuGet packages.
+4. Set the startup project to: `ExportingCustomization` 
+5. Build the solution.
+6. Run the application using `Ctrl+F5`.
+
+**Visual Studio Code**
+
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the directory containing `ExportingCustomization.csproj`.
 
 ```bash
-git clone https://github.com/SyncfusionExamples/EJ2-DataGrid-BlazorServer-Exporting-Customization.git
-cd ExportingCustomization
+dotnet restore
 ```
 
-### Run with Visual Studio
-
-1. Open the solution file using Visual Studio 2022 or later.
-2. Restore the NuGet packages by rebuilding the solution.
-3. Build the project to ensure there are no compilation errors.
-4. Run the project.
-
-### Run with .NET CLI
-
 ```bash
-# Restore dependencies
-dotnet restore
-
-# Run the project
 dotnet run
 ```
+4. Open the URL displayed by the ASP.NET Core application in your browser.
 
-## References
+## Project Structure
 
-**Documentation**: https://blazor.syncfusion.com/documentation/datagrid/excel-exporting
+`Pages/` — contains the Blazor page that implements DataGrid export customization scenarios.
 
-**Online example**: https://blazor.syncfusion.com/demos/datagrid/exporting?theme=bootstrap5
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Official Syncfusion DataGrid exporting documentation: https://help.syncfusion.com/grid-sdk/blazor/data-grid/excel-exporting
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
